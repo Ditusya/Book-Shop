@@ -1,3 +1,11 @@
 <p>
   book-list works!
 </p>
+
+<mat-list role="list" >
+  <mat-list-item role="listitem" *ngFor="let book of books">
+    <mat-icon matListIcon color="primary">book</mat-icon>
+    <p matLine>id: {{book.id}}</p>
+    <p matLine> name: {{book.name}}</p>
+  </mat-list-item>
+</mat-list>
