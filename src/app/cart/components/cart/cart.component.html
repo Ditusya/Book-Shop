@@ -1,3 +1,10 @@
 <p>
   cart works!
 </p>
+<mat-list role="list" >
+  <mat-list-item role="listitem" *ngFor="let soldbook of soldBooks">
+    <mat-icon matListIcon color="primary">shopping_cart</mat-icon>
+    <p matLine>id: {{soldbook.id}}</p>
+    <p matLine> name: {{soldbook.name}}</p>
+  </mat-list-item>
+</mat-list>
