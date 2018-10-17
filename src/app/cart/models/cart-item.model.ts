@@ -1,11 +1,12 @@
-import {BookModel} from '../../products/models/book.model';
+import { BookModel } from '../../products/models/book.model';
 
-export class CartItemModel {
-  constructor() {
-
+export class CartItemModel extends BookModel {
+  constructor(public id: number,
+              public name: string,
+              public price: number,
+              public img: string,
+              public quantity: number) {
+    super(id, name, price, img);
   }
 }
 
-// 6. Создать модели:
-// CartItemModel
-// наследник модели BookModel. Добавить поле quantity.
